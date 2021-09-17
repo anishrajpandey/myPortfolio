@@ -183,6 +183,7 @@ section {
     background-color: var(--mainbgcolor);
     width: 50%;
     height: fit-content;
+    user-select: none;
 }
 
 .rightintro {
@@ -198,6 +199,7 @@ section {
     margin-left: 76px;
     margin-top: 16px;
     text-transform: uppercase;
+    user-select: none;
 }
 
 [alt="logo"] {
@@ -210,6 +212,7 @@ section {
     top: 3px;
     left: 5px;
     cursor: pointer;
+    user-select: none;
 }
 
 div.circle {
@@ -228,18 +231,21 @@ div.circle {
     margin-top: 107px;
     height: 90%;
     margin-left: 72px;
+    user-select: none;
 }
 
 .leftIntro .name {
     color: var(--maincolor);
     font-size: 2.5rem;
     font-weight: 900;
+    user-select: none;
 }
 
 .leftIntro h3.intro>span {
     position: relative;
     letter-spacing: normal;
     font-style: 90;
+    user-select: none;
 }
 
 .leftIntro h3.intro>span::before {
@@ -485,8 +491,8 @@ div.aboutMainContent::selection {
 
 .aboutmain .rightphoto img:hover {
     box-shadow: 0 0 0 10px var(--mainbgcolor), 0 0 0 20px var(--maincolor), 0 0 5px 20px var(--maincolor), 0 0 15px 20px var(--maincolor), 0 0 20px 20px var(--maincolor);
-    transform: scale(1.1);
-    cursor: zoom-in;
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .aboutmain .rightphoto {
