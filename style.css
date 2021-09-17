@@ -386,7 +386,7 @@ div.infoContent>p::selection {
     animation: uptodown .3s ease infinite alternate;
     position: relative;
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 @keyframes uptodown {
