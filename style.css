@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+
+/* **********************Utility Classes******************************* */
+
+a {
+    height: fit-content;
+    width: fit-content;
+}
+
+.anchor {
+    text-decoration: none;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --menuHeight: 33px;
+    --maincolor: #00FFF0;
+    --mainbgcolor: #24202B;
+    --transparentTextColor: rgb(182, 186, 207);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth !important;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(to top, rgb(255, 255, 255) var(--scrollPercent), rgb(0, 0, 0) var(--scrollPercent));
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 10px;
+    box-shadow: inset 0 0 2px red, inset 0 0 4px purple inset 0 0 6px white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.menu {
+    margin-left: 248px;
+    position: fixed;
+    top: 15px;
+    height: var(--menuHeight);
+    z-index: 1;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 499px;
+    transition: all .05s linear;
+}
+
+span {
+    cursor: pointer;
+}
+
+ul li {
+    margin: 3px 10px;
+    list-style: none;
+}
+
+.logo {
+    font-family: 'Acme', sans-serif;
+    font-size: large;
+    font-weight: 800;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.4rem;
+    transition: all .1s ease;
+    position: relative;
+}
+
+ul li a:hover {
+    color: var(--maincolor) !important;
+    text-shadow: 1px 1px 10px var(--maincolor);
+}
+
+ul li a:hover::after {
+    content: "";
+    height: 3px;
+    background-color: var(--maincolor);
+    position: absolute;
+    top: 29px;
+    left: 0;
+    animation: span 1s alternate;
+}
+
+@keyframes span {
+    0% {
+        width: 0px;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+div.scroller {
+    /* height :100vh;  */
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    position: relative;
+    width: 102%;
+    overflow-x: hidden;
+}
+
+section {
+    scroll-snap-align: center;
+    min-height: 99vh;
+}
+
+#home {
+    margin-top: -34px;
+    height: 105vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    overflow-y: hidden;
+    background-color: var(--mainbgcolor);
+}
+
+#about {
+    background: var(--mainbgcolor);
+    height: 100vh;
+}
+
+#skills {
+    background: linear-gradient(326deg, rgba(223, 243, 132, 0.793) 0%, rgba(43, 52, 223, 1) 100%);
+    height: 100vh;
+}
+
+#contact {
+    background: rgb(255, 0, 215);
+    /* background: linear-gradient(326deg, rgba(255,0,215,1) 0%, rgba(255,252,0,1) 100%); */
+    height: 100vh;
+    background-color: var(--mainbgcolor);
+}
+
+.leftIntro>h1 {
+    font-family: 'Fredoka One', cursive;
+    margin-top: 202px;
+    margin-left: 76px;
+    width: fit-content;
+    font-size: 5.7rem;
+    color: var(--maincolor);
+    text-transform: uppercase;
+    height: fit-content;
+    letter-spacing: 3px;
+}
+
+.leftIntro {
+    background-color: var(--mainbgcolor);
+    width: 50%;
+    height: fit-content;
+}
+
+.rightintro {
+    background-color: var(--mainbgcolor);
+    width: 50%;
+    height: 80%;
+}
+
+.leftIntro h3 {
+    font-size: 1.9rem;
+    font-family: 'Josefin Sans', monospace;
+    color: white;
+    margin-left: 76px;
+    margin-top: 16px;
+    text-transform: uppercase;
+}
+
+[alt="logo"] {
+    width: 60px;
+    height: 60px;
+    align-self: flex-start;
+    position: fixed;
+    z-index: 8;
+    margin: 0px 2px;
+    top: 3px;
+    left: 5px;
+    cursor: pointer;
+}
+
+div.circle {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background-color: #A9A0A3;
+    position: absolute;
+    top: -140px;
+    right: -114px;
+    z-index: 4;
+}
+
+[alt="Proud Coder"] {
+    width: 70%;
+    margin-top: 107px;
+    height: 90%;
+    margin-left: 72px;
+}
+
+.leftIntro .name {
+    color: var(--maincolor);
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.leftIntro h3.intro>span {
+    position: relative;
+    letter-spacing: normal;
+    font-style: 90;
+}
+
+.leftIntro h3.intro>span::before {
+    content: "|";
+    color: var(--maincolor);
+    position: absolute;
+    left: 0;
+    height: 50px;
+    font-size: 37px;
+    animation: typing 4s ease-out infinite;
+    width: 500px;
+    background-color: var(--mainbgcolor);
+    top: -15px;
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+@keyframes typing {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: var(--spanwidth);
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+div.logobg {
+    background-color: white;
+    width: 70px;
+    position: fixed;
+    top: 35px;
+    left: 8px;
+    z-index: 7;
+    height: 70px;
+}
+
+div.infobox {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    left: -401px;
+    top: 70px;
+    background: linear-gradient(360deg, rgba(255, 0, 0, 1) 1%, rgba(0, 255, 240, 1) 36%);
+    border-radius: 16px;
+    height: 455px;
+    width: 400px;
+    transition: all .4s ease-in-out;
+}
+
+[alt="My Photo"] {
+    padding-left: 0;
+    width: 325px;
+    border-radius: 21px;
+    left: 42px;
+    margin: 27px 36px;
+}
+
+div.infobox [alt="cancel"] {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+a.contactButton {
+    color: black;
+    width: 163px;
+    height: 58px;
+    background: var(--maincolor);
+    border-radius: 33px;
+    display: inline-block;
+    text-align: center;
+    margin: 15px 72px;
+    padding: 14px 9.5px;
+    font-size: 20px;
+    border: 2px solid var(--maincolor);
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: .5px;
+    font-weight: 300;
+    transition: all .1s ease;
+}
+
+a.contactButton:hover {
+    background: var(--mainbgcolor);
+    color: white;
+}
+
+div.infoContent {
+    width: 21%;
+    position: relative;
+    top: -13%;
+    left: 0px;
+    margin: 0px 66px;
+    font-size: 2.5rem;
+    /* font-weight: bold; */
+}
+
+div.infoContent>p {
+    color: var(--transparentTextColor);
+    font-size: 2rem;
+    font-weight: light;
+    letter-spacing: 2px;
+    padding: 5px;
+    font-family: 'Piedra', cursive;
+    text-align: justify;
+}
+
+div.infoContent>p::before {
+    content: open-quote;
+}
+
+div.infoContent>p::after {
+    content: close-quote;
+}
+
+div.infoContent>p::selection {
+    background: rgb(238, 255, 0);
+    color: #000;
+}
+
+[alt="Scroll"] {
+    height: 73px;
+    width: 90px;
+    margin: 34px 125px;
+    animation: uptodown .3s ease infinite alternate;
+    position: relative;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@keyframes uptodown {
+    from {
+        top: 0;
+    }
+    to {
+        top: 5px;
+    }
+}
+
+div.scrollbarbox>p {
+    margin-top: -30px;
+    margin-left: 121px;
+    color: var(--transparentTextColor);
+    font-family: sans-serif;
+    font-size: .8rem;
+    animation: blink 2s linear infinite;
+}
+
+.scrollbarbox {
+    margin: 0 137px;
+}
+
+div.headbarabout {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+div.headbarabout P {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Advent Pro', sans-serif;
+    position: relative;
+    top: -15px;
+    left: 100px;
+    color: var(--maincolor);
+    text-shadow: none;
+}
+
+div.headbarabout hr {
+    width: 30%;
+    margin-top: 7px;
+    border: 0;
+    height: 1px;
+    background: rgb(0, 255, 234);
+}
+
+div.headbarabout hr.line {
+    margin-left: 215px;
+    margin-top: -30px;
+}
+
+div.headbar_about_content {
+    font-size: 2rem;
+    font-family: 'Concert One', cursive;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    color: var(--maincolor);
+    text-shadow: 1px 1px 0 black, 4px -5px 2px rgb(167, 167, 167);
+    transition: all .04s linear;
+}
+
+div.aboutMainContent {
+    border: 2px solid var(--maincolor);
+    width: 50%;
+    padding: 10px;
+    margin: 25px;
+    margin-left: 100px;
+    height: 400px;
+    font-family: 'Lekton', sans-serif;
+    border-radius: 30px;
+    color: white;
+    transition: all .01s ease;
+}
+
+div.aboutMainContent:hover {
+    box-shadow: 0 0 15px rgb(84, 99, 104);
+}
+
+div.aboutMainContent::selection {
+    background-color: lime;
+    color: black;
+}
+
+.aboutmain {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    ;
+}
+
+.aboutmain .rightphoto img {
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 0px;
+    transition: all .1s linear;
+}
+
+.aboutmain .rightphoto img:hover {
+    box-shadow: 0 0 0 10px var(--mainbgcolor), 0 0 0 20px var(--maincolor), 0 0 5px 20px var(--maincolor), 0 0 15px 20px var(--maincolor), 0 0 20px 20px var(--maincolor);
+    transform: scale(1.1);
+    cursor: zoom-in;
+}
+
+.aboutmain .rightphoto {
+    /* padding-left:0; */
+    width: 350px;
+}
+
+div.headbar_about_content:hover {
+    text-shadow: -4px -5px 2px rgb(167, 167, 167);
+}
+
+a.contactButton.cv {
+    width: 200px;
+    margin-left: 100px;
+    margin-right: 10px;
+    /* margin:0 350px; */
+}
+
+a.contactButton.cv:nth-child(2) {
+    margin-left: 0px;
+    background-color: var(--mainbgcolor);
+    color: whitesmoke;
+    cursor: not-allowed;
+}
+
+div.smedia img {
+    width: 50px;
+    height: 50px;
+}
+
+div.socialMedias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+div.socialMedias h4 {
+    color: var(--maincolor);
+    font-family: 'Quicksand', sans-serif;
+}
+
+div.socialMedias h4:hover {
+    text-decoration: underline;
+}
+
+.smedia {
+    position: relative;
+    z-index: 2;
+}
+
+.smedia:hover ::after {
+    content: attr(data-name);
+    text-decoration: none;
+    color: var(--mainbgcolor);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: var(--maincolor);
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding: 15px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+div.github img {
+    filter: invert(.8)
+}
