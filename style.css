@@ -602,13 +602,31 @@ div.github img {
 div.languages {
     display: grid;
     grid-gap: 2px;
-    margin-left: 7rem;
-    grid-template-columns: 200px;
-    width: 60rem;
+    padding-top: 23px;
+    padding-right: 10px;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    grid-template-columns: 100px 100px;
+    grid-auto-rows: 100px 100px 100px;
+    box-shadow: inset 3.3px 3.3px 5px rgb(110, 94, 255), inset -5px -5px 5px rgb(0, 0, 0);
+    transform: scale(1.5);
+    height: fit-content;
+    border-radius: 20px;
+    transition: transform .1s linear;
+}
+
+div.languages:hover {
+    transform: scale(1.56);
+}
+
+div.languages:active {
+    transform: scale(1.4);
 }
 
 div.languages img {
     width: 100px;
+    cursor: pointer;
+    position: relative;
 }
 
 div.skillsmain {
@@ -623,7 +641,7 @@ div.skillsmain {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    width: 50rem;
+    width: 17rem;
     position: relative;
     z-index: 3;
     left: 15rem;
@@ -657,4 +675,12 @@ div.skillsmain .programmerPhoto img {
     width: 73px;
     filter: invert(1);
     margin-left: 10px;
+}
+
+.skillsmain .skillsIndicator {
+    width: 27rem;
+    background: #000;
+    height: 17rem;
+    align-self: center;
+    margin-left: 5.6rem;
 }
