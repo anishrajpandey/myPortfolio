@@ -42,7 +42,7 @@
             <a href="#" class="contactButton anchor" onclick='showContactCard();'>Contact Me</a>
 
             <div class="infobox" id="infobox">
-                <!-- <span class="crossbutton" id="crossbutton"><img src="assets/cancel-icon.jpg" alt="cancel"></span> -->
+                <span class="crossbutton" id="crossbutton"><img src="assets/cancel-icon.jpg" alt="cancel"></span>
 
                 <img src="assets/myPhoto.png" alt="My Photo">
 
@@ -111,11 +111,11 @@
     </section>
     <section id="skills">
         <div class="skillsheading">
-            <h1><span><   </span>Skills<span>   /></span></h1>
+            <h1><span>< </span>Skills<span> /></span></h1>
         </div>
         <div class="skillsmain">
             <div class="languages">
-                <div class="skill html"><img src="assets/html.png" alt=""></div>
+                <div class="skill html" id="htmllogo"><img src="assets/html.png" alt=""></div>
                 <div class="skill python"><img src="assets/python_adobespark.png" alt=""></div>
                 <div class="skill css"><img src="assets/css-removebg-preview.png" alt=""></div>
                 <div class="skill react"><img src="assets/react-removebg-preview.png" alt=""></div>
@@ -123,12 +123,21 @@
                 <div class="skill github"><img src="assets/github-logo.png" alt=""></div>
             </div>
             <div class="skillsIndicator">
-                <div class="forHTML"></div>
-                <div class="forCSS"></div>
-                <div class="forJS"></div>
-                <div class="forPYTHON"></div>
-                <div class="forREACT"></div>
-                <div class="for"></div>
+                <div class="forHTML card" id="html">
+                    <span class="title">Language:</span>
+
+                    <h3>HTML</h3>
+                    <span class="title2">How much Do I know?</span>
+                    <div class="progress">
+                        <div class="progressHTML"></div>
+                    </div>
+
+                </div>
+                <div class="forCSS card" id="css"></div>
+                <div class="forJS card" id="js"></div>
+                <div class="forPYTHON card" id="python"></div>
+                <div class="forREACT card" id="react"></div>
+                <div class="forGithub card" id="github"></div>
             </div>
             <div class="programmerPhoto"><img src="assets/man-removebg-preview.png" alt=""></div>
         </div>

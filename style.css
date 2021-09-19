@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
 
 /* **********************Utility Classes******************************* */
 
@@ -21,6 +22,7 @@ a {
     --maincolor: #00FFF0;
     --mainbgcolor: #24202B;
     --transparentTextColor: rgb(182, 186, 207);
+    --linearBackground: linear-gradient(90deg, rgba(252, 176, 143, 1) 12%, rgba(233, 126, 116, 1) 25%, rgba(131, 131, 131, 1) 46%, rgba(92, 77, 133, 1) 67%, rgba(21, 152, 100, 1) 91%);
 }
 
 * {
@@ -67,7 +69,7 @@ html {
     position: fixed;
     top: 15px;
     height: var(--menuHeight);
-    z-index: 1;
+    z-index: 59;
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
@@ -572,7 +574,7 @@ div.github img {
 
 .skillsheading {
     position: relative;
-    bottom: 6%;
+    bottom: 3%;
     display: flex;
     justify-content: center;
     padding-top: -15px;
@@ -594,7 +596,7 @@ div.github img {
 .skillsheading h1 span {
     color: rgb(34, 29, 44);
     font-size: 8rem;
-    text-shadow: 2px 2px 10px rebeccapurple;
+    text-shadow: 2px 2px 5px rebeccapurple;
     position: relative;
     top: 10px;
 }
@@ -631,8 +633,9 @@ div.languages img {
 
 div.skillsmain {
     display: flex;
-    width: 80%;
-    margin-top: -15px;
+    flex-wrap: wrap;
+    width: 90%;
+    /* margin-top: -15px; */
 }
 
 .programmerPhoto {
@@ -646,13 +649,16 @@ div.skillsmain {
     z-index: 3;
     left: 15rem;
     border-radius: 50%;
-    background-color: var(--mainbgcolor);
-    box-shadow: 10px 4px 10px 0 rgb(124, 95, 255);
+    background-color: var(--mainbgcsolor)transparent;
+    /* box-shadow: 10px 4px 10px 0 rgb(124, 95, 255); */
+    position: absolute;
+    left: 75vw;
+    top: 0vh;
 }
 
 div.skillsmain .programmerPhoto img {
-    width: 20rem;
-    height: 30rem;
+    width: 45rem;
+    height: 45rem;
 }
 
 .skillsmain>.languages .js img {
@@ -678,9 +684,82 @@ div.skillsmain .programmerPhoto img {
 }
 
 .skillsmain .skillsIndicator {
-    width: 27rem;
-    background: #000;
-    height: 17rem;
-    align-self: center;
+    width: 43rem;
+    height: 25rem;
+    margin: 2rem 0;
     margin-left: 5.6rem;
+    color: white;
+    border-radius: 2rem;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    border-left: 1px solid rgba(255, 255, 255, .5);
+    \ overflow: hidden;
+}
+
+
+/* .skillsmain .skillsIndicator::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+   
+} */
+
+.skillsmain .skillsIndicator .card {
+    position: relative;
+    z-index: 12;
+}
+
+.skillsmain .skillsIndicator h3 {
+    text-align: center;
+    color: white;
+    font-family: 'Squada One', cursive;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    padding: 17px 0;
+}
+
+.skillsmain .skillsIndicator div {
+    position: absolute;
+    inset: 0;
+    /* background-color: #00FFF0; */
+}
+
+.skillsmain .skillsIndicator .progress {
+    /* background: red; */
+    width: 90%;
+    height: 40px;
+    margin: 140px auto;
+    border-radius: 50px;
+    box-shadow: inset 20px 20px 38px #0e0d11, inset -20px -20px 38px #3a3345;
+}
+
+.skillsmain .skillsIndicator span.title {
+    position: absolute;
+    padding-top: 40px;
+    padding-left: 23px;
+    font-family: 'Lekton', sans-serif;
+}
+
+.skillsmain .skillsIndicator span.title2 {
+    font-family: 'Lekton', sans-serif;
+    display: inline-block;
+    padding-left: 23px;
+    padding-top: 23px;
+}
+
+.skillsmain .skillsIndicator .progressHTML {
+    background: rgb(252, 176, 143);
+    background: var(--linearBackground);
+    border-radius: inherit;
+    width: 0%;
+    animation: var(--AnimationForHTML);
+}
+
+@keyframes HTML {
+    to {
+        width: 80%;
+    }
 }
