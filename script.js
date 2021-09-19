@@ -12,10 +12,16 @@ const menuBar = document.getElementById("navigation");
 const HTML = document.getElementById('html');
 const HTMLlogo = document.getElementById('htmllogo');
 const Python = document.getElementById('python');
+const Pythonlogo = document.getElementById('pythonlogo');
 const CSS = document.getElementById('css');
+const CSSlogo = document.getElementById('csslogo');
 const React = document.getElementById('react');
+const Reactlogo = document.getElementById('reactlogo');
 const JS = document.getElementById('js');
+const JSlogo = document.getElementById('jslogo');
 const Github = document.getElementById('github');
+const Githublogo = document.getElementById('githublogo');
+const defaultText = document.getElementById('default')
 
 function getOne() {
     let selected = Math.floor(((Math.random() * noOfItems)));
@@ -88,6 +94,7 @@ function showContactCard() {
     let email = prompt("enter your email", 'example@gmail.com');
     console.log(email);
 }
+defaultText.style.display = "block"
 HTML.style.display = "None";
 React.style.display = "None";
 Python.style.display = "None";
@@ -99,10 +106,77 @@ HTMLlogo.addEventListener('click', () => {
     document.documentElement.style.setProperty("--AnimationForHTML", "HTML 1s ease-in-out forwards");
     React.style.display = "None";
     Python.style.display = "None";
-    CSS.style.display = "None";
+    CSS.style.display = "none";
     JS.style.display = "None";
     Github.style.display = "None";
-    HTML.style.display = "block";
+    HTML.style.display = "Block";
+    defaultText.style.display = "none"
+
 
 
 })
+CSSlogo.addEventListener('click', () => {
+    document.documentElement.style.setProperty("--AnimationForCSS", "CSS 1s ease-in-out forwards")
+    React.style.display = "None";
+    Python.style.display = "none";
+    CSS.style.display = "block";
+    JS.style.display = "None";
+    Github.style.display = "None";
+    HTML.style.display = "none";
+    defaultText.style.display = "none"
+
+
+
+});
+JSlogo.addEventListener('click', () => {
+    document.documentElement.style.setProperty("--AnimationForJS", "JS 1s ease-in-out forwards")
+    React.style.display = "None";
+    Python.style.display = "none";
+    CSS.style.display = "none";
+    JS.style.display = "block";
+    Github.style.display = "None";
+    HTML.style.display = "none";
+    defaultText.style.display = "none"
+
+
+
+});
+Pythonlogo.addEventListener('click', () => {
+    document.documentElement.style.setProperty("--AnimationForPYTHON", "PYTHON 1s ease-in-out forwards")
+    React.style.display = "None";
+    Python.style.display = "BLOCK";
+    CSS.style.display = "none";
+    JS.style.display = "none";
+    Github.style.display = "None";
+    HTML.style.display = "none";
+    defaultText.style.display = "none"
+
+
+
+});
+Reactlogo.addEventListener('click', () => {
+    document.documentElement.style.setProperty("--AnimationForReact", "REACT 1s ease-in-out forwards")
+    React.style.display = "block";
+    Python.style.display = "none    ";
+    CSS.style.display = "none";
+    JS.style.display = "none";
+    Github.style.display = "None";
+    HTML.style.display = "none";
+    defaultText.style.display = "none"
+
+
+
+});
+Githublogo.addEventListener('click', () => {
+    document.documentElement.style.setProperty("--AnimationForGithub", "GITHUB 1s ease-in-out forwards")
+    React.style.display = "none";
+    Python.style.display = "none    ";
+    CSS.style.display = "none";
+    JS.style.display = "none";
+    Github.style.display = "block";
+    HTML.style.display = "none";
+    defaultText.style.display = "none"
+
+
+
+});
