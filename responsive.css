@@ -1,0 +1,42 @@
+@media screen and (max-width: 1496px) {
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  div.infoContent > p {
+    margin-top: 67px;
+    font-size: 1.5rem;
+  }
+
+  div.circle {
+    width: 500px;
+    height: 500px;
+    top: 50px;
+    right: 2px;
+    overflow-y: hidden;
+  }
+}
+@media screen and (max-width: 1050px) {
+  div.leftIntro,
+  div.rightintro {
+    height: 180vh;
+  }
+  div.circle {
+    width: 200vh;
+    height: 300px;
+    /* padding-bottom: 123px; */
+    top: 77vh;
+    right: 0px;
+    overflow-y: hidden;
+    border-radius: 0;
+  }
+
+  div.circle [alt="extra"] {
+    display: block;
+  }
+  div.circle [alt="Proud Coder"] {
+    display: none;
+    /* object-fit: cover; */
+    width: 100vw;
+    margin-left: 460px;
+    height: 100px;
+  }
+}
