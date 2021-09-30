@@ -1,6 +1,6 @@
 //Type the strings here
 // ##########################################
-const arr = ["Student", "Web Developer", "Web Designer..........."];
+const arr = ["Web Developer"];
 // #################################################
 //Variable declaration
 let noOfItems = arr.length;

@@ -163,13 +163,12 @@ section {
 
 #about {
   background: var(--mainbgcolor);
-  height: 100vh;
+  height: 105vh;
 }
 
 #skills {
   position: relative;
   background-color: var(--mainbgcolor);
-  background-color: red;
   height: 100vh;
   z-index: 2;
 }
@@ -191,7 +190,7 @@ section {
   top: 64%;
 }
 
-#skills::before {
+/* #skills::before {
   content: "";
   position: absolute;
   width: 200px;
@@ -207,7 +206,7 @@ section {
   z-index: -1;
   left: 64%;
   top: 15%;
-}
+} */
 
 #contact {
   background: rgb(255, 0, 215);

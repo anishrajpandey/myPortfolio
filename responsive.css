@@ -11,25 +11,12 @@
     right: 2px;
     overflow-y: hidden;
   }
-  #about {
-    height: 110vh;
-    flex-wrap: wrap;
-  }
-  div.aboutmain {
-    flex-wrap: wrap;
-  }
-  div.aboutMainContent {
-    min-width: 400px;
-  }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and /*694*/ (max-width: 1050px) {
   div.leftIntro {
     height: 140vh;
   }
-  /* ,
-  div.rightintro  */
-
   div.circle {
     width: 200vh;
     height: 250px;
@@ -44,11 +31,6 @@
     background-attachment: fixed;
   }
 
-  div.circle [alt="extra"] {
-    height: 300px;
-    width: clamp(200px, 69rem, 69rem);
-    margin-left: 10rem;
-  }
   div.leftIntro {
     overflow-x: hidden;
     margin-right: 9rem;
@@ -62,11 +44,11 @@
   div.infoContent {
     display: none;
   }
-  div.circle [alt="Proud Coder"] {
-    display: none;
+  div.circle > [alt="Proud Coder"] {
     width: 100vw;
     margin-left: 460px;
     height: 100px;
+    display: none;
   }
   #home {
     justify-content: space-between;
@@ -90,7 +72,7 @@
     font-size: 2rem;
   }
   .menu {
-    margin-left: 150px;
+    margin-left: 130px;
   }
   div.infobox {
     z-index: 1000;
@@ -99,14 +81,122 @@
     top: 19px;
     width: 404px;
   }
+  #about {
+    height: 156vh;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  div.aboutmain {
+    flex-wrap: wrap;
+  }
+  div.aboutMainContent {
+    max-width: 1000px;
+    max-height: max-content;
+    width: 800px;
+    margin-left: 80px;
+    margin-bottom: 54px;
+  }
+  .aboutmain .rightphoto {
+    margin: 0 89px;
+    margin-bottom: 23px;
+  }
+  .aboutmain .rightphoto img {
+    /* margin-left: 90px; */
+    width: 300px;
+    height: 300px;
+  }
+  div.btnarea {
+    position: absolute;
+    right: 35%;
+    top: 52%;
+  }
+  a.contactButton.cv {
+    margin: 2px 0;
+  }
+  #skills {
+    height: 180vh;
+  }
+  .skillsmain .skillsIndicator {
+    height: 19rem;
+    margin-top: 8rem;
+  }
+  #section::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    clip-path: circle(50% at 50% 50%);
+    inset: 0;
+    background: linear-gradient(
+      60deg,
+      rgba(255, 98, 215, 1) 29%,
+      rgba(249, 227, 4, 1) 74%,
+      rgba(255, 235, 0, 1) 76%
+    );
+    z-index: -1;
+    left: 64%;
+    top: 55%;
+  }
 }
+
 @media screen and (min-width: 727px) and (max-width: 1049px) {
   div.stickyImg {
     opacity: 1;
   }
 }
-@media screen and (min-width: 2px) and (max-width: 645) {
-  div.circle [alt="Proud Coder"] {
+/* @media screen and (min-width: 727px) and (max-width: 630px) {
+} */
+@media screen and (max-width: 688px) {
+  div.socialMedias {
+    flex-direction: row;
+    gap: 15px;
+  }
+  #about {
+    height: 178vh;
+  }
+  .skillsheading h1 {
+    font-size: 57px;
+  }
+  .skillsheading h1 span {
+    font-size: 60px;
+    top: -3px;
+  }
+  .programmerPhoto {
+    margin: 10px -106px;
+    top: -17vh;
+  }
+  .programmerPhoto img {
+    width: 15rem;
+    height: 15rem;
+  }
+  div.languages {
+    margin-left: 5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  div.languagea {
+    margin-left: 2rem;
+    width: 330px;
+  }
+  .programmerPhoto {
     display: none;
+  }
+  div.leftIntro {
+    margin-right: 0rem;
+  }
+  #about {
+    height: 170vh;
+  }
+  .skillsmain .skillsIndicator {
+    margin: 7rem 0;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 300px) {
+  .aboutmain .rightphoto {
+    margin-left: 0;
+  }
+  #about {
+    height: 180vh;
   }
 }
