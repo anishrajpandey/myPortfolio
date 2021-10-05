@@ -31,6 +31,7 @@ a {
     rgba(92, 77, 133, 1) 67%,
     rgba(21, 152, 100, 1) 91%
   );
+  --mainFont: "Baloo Bhai 2";
 }
 
 * {
@@ -98,6 +99,95 @@ body {
 span {
   cursor: pointer;
 }
+.mobileNav {
+  height: 90vh;
+  width: 70%;
+  position: fixed;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.96);
+  z-index: 99;
+  border-radius: 6px;
+  transition: all 150ms linear;
+  left: -465px;
+}
+
+.hamburgerButton {
+  cursor: pointer;
+  width: 36px;
+  height: 31px;
+  background: var(--maincolor);
+  position: fixed;
+  z-index: 189;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 3px;
+  visibility: hidden;
+  transition: all 300ms ease;
+}
+/* .hamburgerButton:active #first {
+  transform: rotate(35deg);
+  transform-origin: left;
+}
+.hamburgerButton:active #second {
+  opacity: 0;
+}
+.hamburgerButton:active #third {
+  transform: rotate(-35deg);
+  transform-origin: left;
+} */
+.hamburgerButton div.line {
+  cursor: pointer;
+  width: 30px;
+  height: 3.35px;
+  border-radius: 10px;
+  display: block;
+  background-color: black;
+  margin: 3px 0;
+  transition: inherit;
+}
+.mobilemenu {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 5px;
+}
+.mobileNav .mobilemenu div.item {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+}
+.mobileNav .mobilemenu h1 {
+  color: #fff;
+  font-family: sans-serif;
+  margin: auto;
+  padding-bottom: 10px;
+}
+.mobileNav .mobilemenu div a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-decoration: none;
+  font-family: baloo bhai;
+  color: rgba(0 0 0/1);
+  font-size: 23px;
+  font-family: var(--mainFont);
+}
+#HomeMobile {
+  background-color: rgb(190, 232, 245);
+}
+#AboutMobile {
+  background-color: rgb(127, 216, 243);
+}
+#SkillsMobile {
+  background-color: rgb(61, 202, 245);
+}
+#ProjectsMobile {
+  background-color: rgb(51, 192, 235);
+}
 
 ul li {
   margin: 3px 10px;
@@ -113,7 +203,7 @@ ul li {
 ul li a {
   text-decoration: none;
   color: white;
-  font-family: "Baloo Bhai 2", cursive;
+  font-family: var(--mainFont), cursive;
   font-size: 1.4rem;
   transition: all 0.1s ease;
   position: relative;
@@ -159,6 +249,7 @@ section {
   width: 100vw;
   overflow: hidden;
   background-color: var(--mainbgcolor);
+  position: relative;
 }
 
 #about {

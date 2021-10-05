@@ -144,9 +144,21 @@
     opacity: 1;
   }
 }
-/* @media screen and (min-width: 727px) and (max-width: 630px) {
-} */
+
 @media screen and (max-width: 688px) {
+  #navigation {
+    display: none;
+  }
+  [alt="logo"] {
+    display: none;
+  }
+  .hamburgerButton {
+    visibility: visible;
+  }
+  div.mobileNav {
+    display: block;
+  }
+
   div.socialMedias {
     flex-direction: row;
     gap: 15px;

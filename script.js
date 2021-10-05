@@ -24,6 +24,15 @@ const Githublogo = document.getElementById("githublogo");
 const defaultText = document.getElementById("default");
 let box = document.getElementById("infobox");
 let quitButton = document.getElementById("quit");
+let mobileMenuforHome = document.getElementById("HomeMobile");
+let mobileMenuforAbout = document.getElementById("AboutMobile");
+let mobileMenuforSkills = document.getElementById("SkillsMobile");
+let mobileMenuforProjects = document.getElementById("ProjectsMobile");
+let mobileNavBar = document.getElementsByClassName("mobileNav")[0];
+let hamBurgerButton = document.getElementById("hamBurgerButton");
+let first = document.getElementById("first");
+let second = document.getElementById("second");
+let third = document.getElementById("third");
 
 let shown = true;
 
@@ -180,4 +189,41 @@ Githublogo.addEventListener("click", () => {
 document.documentElement.style.setProperty("--Success", "none");
 const success = () => {
   document.documentElement.style.setProperty("--Success", "block");
+};
+let showmenu = true;
+hamBurgerButton.addEventListener("click", () => {
+  showmenu ? makecross() : makeburger();
+  showmenu = !showmenu;
+});
+mobileMenuforHome.addEventListener("click", () => {
+  mobileNavBar.style.left = "-100%";
+  makeburger();
+});
+mobileMenuforAbout.addEventListener("click", () => {
+  mobileNavBar.style.left = "-100%";
+  makeburger();
+});
+mobileMenuforSkills.addEventListener("click", () => {
+  mobileNavBar.style.left = "-100%";
+  makeburger();
+});
+mobileMenuforProjects.addEventListener("click", () => {
+  mobileNavBar.style.left = "-100%";
+  makeburger();
+});
+const makecross = () => {
+  first.style.transform = "rotate(35deg)";
+  first.style.transformOrigin = "left";
+  second.style.opacity = "0";
+  third.style.transform = "rotate(-35deg)";
+  third.style.transformOrigin = "left";
+  mobileNavBar.style.left = "0";
+};
+const makeburger = () => {
+  first.style.transform = "rotate(0deg)";
+  first.style.transformOrigin = "left";
+  second.style.opacity = "1";
+  third.style.transform = "rotate(0deg)";
+  third.style.transformOrigin = "left";
+  mobileNavBar.style.left = "-100%";
 };
