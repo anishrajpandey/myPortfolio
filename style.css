@@ -386,7 +386,7 @@ div.stickyImg {
   right: 0;
   top: 100px;
   z-index: 998;
-  opacity: 0;
+  display: none;
 }
 div.stickyImg img {
   width: 350px;
@@ -473,7 +473,7 @@ div.infobox::after {
   content: "Your Form Has Been Submitted.";
   position: absolute;
   inset: 0;
-  background-color: green;
+  background-color: rgb(104, 240, 104);
   padding: 11rem 9rem;
   font-size: 2rem;
 
@@ -926,6 +926,7 @@ div.skillsmain .programmerPhoto img {
 }
 
 .skillsmain .skillsIndicator h3 {
+  font-size: 50px;
   margin-top: 30px;
   color: #fff;
 }

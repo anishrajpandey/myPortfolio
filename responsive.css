@@ -13,7 +13,7 @@
   }
 }
 
-@media screen and /*694*/ (max-width: 1050px) {
+@media screen and (max-width: 1050px) {
   div.leftIntro {
     height: 140vh;
   }
@@ -77,8 +77,8 @@
   div.infobox {
     z-index: 1000;
     z-index: 1000;
-    left: 10px;
-    top: 19px;
+    left: 5%;
+    top: 13%;
     width: 404px;
   }
   #about {
@@ -141,7 +141,7 @@
 
 @media screen and (min-width: 727px) and (max-width: 1049px) {
   div.stickyImg {
-    opacity: 1;
+    display: block;
   }
 }
 
@@ -186,9 +186,9 @@
   }
 }
 @media screen and (max-width: 500px) {
-  div.languagea {
-    margin-left: 2rem;
-    width: 330px;
+  div.languages {
+    margin-left: 5rem;
+    width: 197px;
   }
   .programmerPhoto {
     display: none;
@@ -203,12 +203,25 @@
     margin: 7rem 0;
     width: 100vw;
   }
+  .skillsmain .skillsIndicator span.title {
+    padding-top: 0px;
+  }
+  .skillsmain .skillsIndicator h3 {
+    font-size: 32px;
+  }
 }
 @media screen and (max-width: 300px) {
   .aboutmain .rightphoto {
     margin-left: 0;
+    width: 200px;
+    height: 200px;
   }
   #about {
     height: 180vh;
+  }
+  div.infobox {
+    width: 200px;
+    height: 500px;
+    left: 0;
   }
 }
