@@ -673,6 +673,7 @@ div.headbar_about_content {
 }
 
 div.aboutMainContent {
+  position: relative;
   border: 2px solid var(--maincolor);
   width: 50%;
   padding: 10px;
@@ -728,9 +729,11 @@ div.headbar_about_content:hover {
 
 a.contactButton.cv {
   width: 200px;
-  margin-left: 100px;
-  margin-right: 10px;
-  /* margin:0 350px; */
+  /* margin-left: 100px;
+  margin-right: 10px; */
+  position: absolute;
+  bottom: -80px;
+  left: 18%;
 }
 
 a.contactButton.cv:nth-child(2) {

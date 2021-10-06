@@ -12,11 +12,17 @@
     overflow-y: hidden;
   }
 }
-
+/* 
+div.btnarea {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+} */
 @media screen and (max-width: 1050px) {
   div.leftIntro {
     height: 140vh;
   }
+
   div.circle {
     width: 200vh;
     height: 250px;
@@ -91,24 +97,23 @@
   }
   div.aboutMainContent {
     max-width: 1000px;
-    max-height: max-content;
     width: 800px;
-    margin-left: 80px;
+    margin-left: 10px;
     margin-bottom: 54px;
   }
   .aboutmain .rightphoto {
     margin: 0 89px;
+
     margin-bottom: 23px;
   }
   .aboutmain .rightphoto img {
-    /* margin-left: 90px; */
     width: 300px;
     height: 300px;
   }
   div.btnarea {
     position: absolute;
-    right: 35%;
-    top: 52%;
+    bottom: -0px;
+    left: 0;
   }
   a.contactButton.cv {
     margin: 2px 0;
@@ -164,7 +169,7 @@
     gap: 15px;
   }
   #about {
-    height: 178vh;
+    height: 190vh;
   }
   .skillsheading h1 {
     font-size: 57px;
@@ -186,6 +191,9 @@
   }
 }
 @media screen and (max-width: 500px) {
+  div.rightphoto {
+    margin: 21px 10px !important;
+  }
   div.languages {
     margin-left: 5rem;
     width: 197px;
@@ -217,15 +225,22 @@
     height: 200px;
   }
   #about {
-    height: 180vh;
+    height: 194vh;
   }
   div.infobox {
     width: 200px;
     height: 500px;
     left: 0;
   }
+  div.aboutMainContent {
+    height: fit-content;
+  }
+  div.socialMedias {
+    margin-top: 7rem;
+    flex-wrap: wrap;
+  }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 570px) {
   .leftIntro h1 {
     font-size: 3em;
   }
@@ -237,5 +252,15 @@
   }
   span#type.name {
     font-size: 1.6rem;
+  }
+  a.contactButton {
+    width: 247px;
+  }
+  .leftIntro h3.intro > span::before {
+    top: -10px;
+    height: fit-content;
+  }
+  .headbarabout h1 {
+    font-size: 49px;
   }
 }
