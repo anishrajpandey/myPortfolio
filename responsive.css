@@ -225,3 +225,17 @@
     left: 0;
   }
 }
+@media screen and (max-width: 460px) {
+  .leftIntro h1 {
+    font-size: 3em;
+  }
+  .leftIntro h3 {
+    font-size: 1em;
+  }
+  .leftIntro span.name {
+    font-size: 1.6rem;
+  }
+  span#type.name {
+    font-size: 1.6rem;
+  }
+}

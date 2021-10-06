@@ -403,7 +403,6 @@ div.stickyImg img {
 .leftIntro h3.intro > span {
   position: relative;
   letter-spacing: normal;
-  font-style: 90;
   user-select: none;
 }
 
@@ -1096,9 +1095,4 @@ div.skillsmain .programmerPhoto img {
 
 .skill img:hover {
   transform: scale(1.1);
-}
-
-iframe {
-  width: 100vw;
-  height: 100vh;
 }
