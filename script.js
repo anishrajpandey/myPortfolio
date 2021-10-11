@@ -196,19 +196,23 @@ hamBurgerButton.addEventListener("click", () => {
   showmenu = !showmenu;
 });
 mobileMenuforHome.addEventListener("click", () => {
-  mobileNavBar.style.left = "-100%";
+  showmenu = !showmenu;
+
   makeburger();
 });
 mobileMenuforAbout.addEventListener("click", () => {
-  mobileNavBar.style.left = "-100%";
+  showmenu = !showmenu;
+
   makeburger();
 });
 mobileMenuforSkills.addEventListener("click", () => {
-  mobileNavBar.style.left = "-100%";
+  showmenu = !showmenu;
+
   makeburger();
 });
 mobileMenuforProjects.addEventListener("click", () => {
-  mobileNavBar.style.left = "-100%";
+  showmenu = !showmenu;
+
   makeburger();
 });
 const makecross = () => {
@@ -226,4 +230,5 @@ const makeburger = () => {
   third.style.transform = "rotate(0deg)";
   third.style.transformOrigin = "left";
   mobileNavBar.style.left = "-100%";
+  //showmenu = !showmenu;
 };
