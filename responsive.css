@@ -105,7 +105,12 @@
     z-index: 1000;
     left: 0%;
     top: 13%;
-    width: 350px;
+    width: 100%;
+  }
+  .fa-times-circle::before {
+    content: "\f057";
+    position: absolute;
+    left: -53px;
   }
   #about {
     height: 156vh;
@@ -271,8 +276,9 @@
     height: fit-content;
   }
   div.infobox {
-    width: 200px;
+    width: 290px;
     height: 500px;
+    overflow-y: hidden;
     left: 0;
   }
   div.aboutMainContent {
