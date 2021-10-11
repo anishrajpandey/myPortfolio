@@ -49,8 +49,6 @@ body {
   overflow-x: hidden;
 }
 
-/* width */
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -787,6 +785,9 @@ div.github img {
   display: flex;
   justify-content: center;
   padding-top: -15px;
+}
+.skillsheading p.desc {
+  display: none;
 }
 
 .skillsheading h1 {

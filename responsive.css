@@ -22,20 +22,27 @@
     background: transparent;
   }
 }
-/* 
-div.btnarea {
+.skillsheading p.desc {
+  display: block;
   position: absolute;
-  bottom: -10px;
-  left: 0;
-} */
+  bottom: 0;
+  left: 10%;
+  color: #fff;
+  font-family: var(--mainFont);
+  font-size: 1.3rem;
+  width: 50%;
+}
+
 @media screen and (max-width: 1050px) {
   div.skillsheading h1 {
-    margin: 4rem 0;
+    margin: 4rem 5rem;
+  }
+  .skillsheading p.desc {
+    bottom: 10px;
   }
   div.leftIntro {
     height: 140vh;
   }
-
   div.circle {
     width: 200vh;
     height: 250px;
@@ -132,7 +139,7 @@ div.btnarea {
     margin: 2px 0;
   }
   #skills {
-    height: 180vh;
+    height: fit-content;
   }
   .skillsmain .skillsIndicator {
     height: 19rem;
@@ -230,8 +237,28 @@ div.btnarea {
   .skillsmain .skillsIndicator h3 {
     font-size: 32px;
   }
+  div.skillsheading h1 {
+    margin-bottom: 6rem;
+  }
+  .skillsheading p.desc {
+    bottom: 5px;
+  }
+}
+@media screen and (max-width: 365px) {
+  div.skillsheading h1 {
+    margin-bottom: 7rem;
+  }
+  .skillsheading p.desc {
+    bottom: 0px;
+  }
 }
 @media screen and (max-width: 300px) {
+  div.skillsheading h1 {
+    margin-bottom: 13rem;
+  }
+  .skillsheading p.desc {
+    bottom: 50px;
+  }
   .aboutmain .rightphoto img {
     margin-left: 0;
     width: 100%;
