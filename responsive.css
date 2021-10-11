@@ -103,9 +103,9 @@
   div.infobox {
     z-index: 1000;
     z-index: 1000;
-    left: 5%;
+    left: 0%;
     top: 13%;
-    width: 404px;
+    width: 350px;
   }
   #about {
     height: 156vh;
