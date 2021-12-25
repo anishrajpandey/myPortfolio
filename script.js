@@ -1,6 +1,11 @@
 //Type the strings here
 // ##########################################
-const arr = ["Web Developer", "Web Designer"];
+const arr = [
+  "Web Developer",
+  "Web Designer",
+  "Graphics Designer",
+  "FreeLancer",
+];
 // #################################################
 //Variable declaration
 let noOfItems = arr.length;
@@ -230,5 +235,4 @@ const makeburger = () => {
   third.style.transform = "rotate(0deg)";
   third.style.transformOrigin = "left";
   mobileNavBar.style.left = "-100%";
-  //showmenu = !showmenu;
 };

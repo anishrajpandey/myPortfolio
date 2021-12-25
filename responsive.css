@@ -12,7 +12,7 @@
     overflow-y: hidden;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   #skills::before {
     content: "";
     background: transparent;
@@ -20,6 +20,9 @@
   #skills::after {
     content: "";
     background: transparent;
+  }
+  #skills {
+    height: fit-content;
   }
 }
 .skillsheading p.desc {
@@ -142,7 +145,7 @@
     margin: 2px 0;
   }
   #skills {
-    height: fit-content;
+    height: 180vh;
   }
   .skillsmain .skillsIndicator {
     height: 19rem;
@@ -165,8 +168,23 @@
     left: 64%;
     top: 55%;
   }
+  .projectJokePoke > .ProjectImg,
+  .projectJokePoke .projectdesc {
+    margin-left: 8rem;
+  }
+  .projectJokePoke .projectdesc a {
+    margin-left: 1.5rem;
+  }
+  .projectJokePoke .projectdesc {
+    margin-left: 12rem;
+  }
 }
-
+@media (max-width: 860px) {
+  .projectJokePoke > .ProjectImg,
+  .projectJokePoke .projectdesc {
+    margin-left: 2rem;
+  }
+}
 @media screen and (min-width: 727px) and (max-width: 1049px) {
   div.stickyImg {
     display: block;
@@ -211,6 +229,10 @@
   }
   div.languages {
     margin-left: 3rem;
+  }
+  .projectJokePoke > .ProjectImg,
+  .projectJokePoke .projectdesc {
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 920px) {
@@ -268,7 +290,7 @@
     bottom: 0px;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
   div.skillsheading h1 {
     margin-bottom: 13rem;
   }
@@ -340,5 +362,14 @@
   }
   .headbarabout h1 {
     font-size: 49px;
+  }
+  .projectJokePoke .ProjectImg,
+  .projectJokePoke .projectdesc {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1296px) {
+  .projectJokePoke {
+    margin-left: 1rem;
   }
 }

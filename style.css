@@ -292,8 +292,8 @@ section {
     rgba(255, 0, 215, 1) 0%,
     rgba(255, 252, 0, 1) 100%
   );
-  height: 100vh;
-  /* background-color: var(--mainbgcolor); */
+  height: fit-content;
+  position: relative;
 }
 
 .leftIntro > h1 {
@@ -1087,4 +1087,104 @@ div.skillsmain .programmerPhoto img {
 
 .skill img:hover {
   transform: scale(1.1);
+}
+/* #projects {
+  display: flex;
+  justify-content: center;
+} */
+div.heading_for_projects {
+  display: flex;
+  justify-content: center;
+}
+div.heading_for_projects {
+  font-size: 2rem;
+  font-family: "Concert One", cursive;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  color: var(--maincolor);
+  text-decoration: underline;
+  transition: all 0.04s linear;
+}
+.projectJokePoke {
+  display: flex;
+  margin-top: 3.4rem;
+  margin-left: 7rem;
+  flex-wrap: wrap;
+  gap: 3rem;
+  overflow-x: hidden;
+}
+.projectJokePoke > .ProjectImg {
+  border: 9px solid var(--maincolor);
+  border-radius: 30px;
+  overflow: hidden;
+}
+.projectJokePoke img {
+  width: clamp(20rem, 40rem, 40rem);
+  height: 20rem;
+}
+.projectJokePoke > .projectdesc {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #00000010;
+  padding: 1em;
+  border-radius: 10px;
+}
+.projectJokePoke > .projectdesc h3 {
+  font-family: "Concert One", cursive;
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+  color: #fff;
+  transition: all 0.04s linear;
+  text-align: center;
+}
+.projectJokePoke > .projectdesc p {
+  text-align: center;
+  color: #fff;
+  font-family: "lekton", "sans-serif";
+  font-size: 1.1rem;
+  width: 300px;
+  margin: 0 auto;
+}
+.projectJokePoke > .projectdesc a {
+  margin-left: 6rem;
+}
+span.sepline {
+  position: relative;
+  display: block;
+  float: right;
+  margin-top: 3rem;
+  width: 80vw;
+  height: 3.5px;
+  background: var(--maincolor);
+}
+span.sepline > span.diamond {
+  width: 13px;
+  aspect-ratio: 1;
+  /* border-radius: 50px; */
+  background: var(--maincolor);
+  transform: rotate(45deg);
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+.moreInfo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 150px;
+  flex-direction: column;
+  color: white;
+  font-family: sans-serif;
+  margin-left: 20rem;
+}
+.moreInfo:first-child {
+  font-size: 2em;
+  width: max-content;
+}
+.moreInfo:last-child {
+  font-size: 1em;
+  width: max-content;
 }
