@@ -705,7 +705,6 @@ div.aboutMainContent::selection {
 }
 
 .aboutmain .rightphoto {
-  /* padding-left:0; */
   width: 350px;
 }
 
@@ -715,8 +714,6 @@ div.headbar_about_content:hover {
 
 a.contactButton.cv {
   width: 200px;
-  /* margin-left: 100px;
-  margin-right: 10px; */
   position: absolute;
   bottom: -80px;
   left: 18%;
@@ -1088,10 +1085,7 @@ div.skillsmain .programmerPhoto img {
 .skill img:hover {
   transform: scale(1.1);
 }
-/* #projects {
-  display: flex;
-  justify-content: center;
-} */
+
 div.heading_for_projects {
   display: flex;
   justify-content: center;
